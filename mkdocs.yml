@@ -1,0 +1,17 @@
+site_name: Notes
+nav: 
+  - Ansible: 
+    - Installer: ansible.md
+    - Commandes et playbook: ansible_commands.md
+
+  - Python:
+    - Créer un environnement virtuel: pip_venv.md
+
+  - RHEL:
+    - Commandes à connaitre: commandes_rhel.md
+    - Réinitialiser mot de passe root: root_password.md
+    - Créer et resize un LVM: create_lvm.md
+
+
+theme: readthedocs
+

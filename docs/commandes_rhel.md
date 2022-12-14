@@ -1,0 +1,16 @@
+#Commandes à connaitre
+- findmnt: montre l'arborescence système
+- df -h: voir les FS
+- which: trouver le répertoire d'une commande
+- ps aux: voir les processes
+- lscpu: infos cpu
+- top: monitorer le system
+- ss: liste les connexions réseau
+- lsblk: voir les block device
+- mkfs: créer un FS
+- tune2fs: gérer FS en ext4
+- xfs_admin: FS ex xfs
+- blkid: voir les ID de FS
+- history + !number: rappeler une commande
+- CTRL+R: rechercher une commande
+- man -k: chercher un man par mot-clé 
