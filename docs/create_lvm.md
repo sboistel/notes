@@ -1,4 +1,4 @@
-#Créer un LVM
+# Créer un LVM
 ```
 pvcreate /dev/sdb
 vgcreate vgdata /dev/sdb
@@ -7,7 +7,7 @@ mkfs -t ext4 /dev/vgdata/lvdata
 ```
 Edit fstab pour qu'il se monte automatiquement où on veut
 
-#Resize LVM
+# Resize LVM
 ```
 umount /dev/vgdata/lvdata
 e2fsck /dev/vgdata/lvdata

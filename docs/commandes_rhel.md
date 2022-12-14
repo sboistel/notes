@@ -1,4 +1,4 @@
-#Commandes à connaitre
+# Commandes à connaitre
 - findmnt: montre l'arborescence système
 - df -h: voir les FS
 - which: trouver le répertoire d'une commande

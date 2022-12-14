@@ -1,5 +1,9 @@
-#Commandes adhoc
-`ansible -m ping host`
+# Commandes adhoc
+```
+ansible -m ping host
+```
+
+
 
 -m permet d'appeler un module ansible
 
@@ -7,9 +11,9 @@
 
 -bK permet de demander les privilèges
 
-#Commandes playbook
+# Commandes playbook
 
-##Taches
+## Taches
 ```
 ---
 - hosts: linux
@@ -21,7 +25,7 @@
       state: present
 ```
 
-##Vars
+## Vars
 ```
 vars:
     collegue:
@@ -30,7 +34,7 @@ vars:
     - toto
 ```
 
-##Handlers
+## Handlers
 ```
 - name: Add line to conf file
     lineinfile:
@@ -50,7 +54,7 @@ handlers:
 ```    
 Un handlers est une tache à exécuter uniquement si elle est appelée en utilisant notify.
 
-##Roles
+## Roles
 Un rôle est une structure de fichier qui permet de séparer les éléments d'un playbook.
 
 `ansible-galaxy role init name`

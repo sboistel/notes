@@ -1,4 +1,4 @@
-#Réinitialiser MDP root
+# Réinitialiser MDP root
 1. Redémarrer
 2. Dans le menu GRUB, appuyer sur "e"
 3. changer quiet par rd.break
