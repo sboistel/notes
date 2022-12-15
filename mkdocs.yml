@@ -9,8 +9,14 @@ nav:
 
   - RHEL:
     - Commandes à connaitre: commandes_rhel.md
+    - Firewall: firewall.md
     - Réinitialiser mot de passe root: root_password.md
     - Créer et resize un LVM: create_lvm.md
+    - Regex: shell-expansion.md
+
+  - Apache:
+    - Configurer apache: apache.md
+
 
 
 theme: readthedocs
