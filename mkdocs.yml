@@ -13,9 +13,15 @@ nav:
     - Réinitialiser mot de passe root: root_password.md
     - Créer et resize un LVM: create_lvm.md
     - Regex: shell-expansion.md
+    - Création de clés privées: ssh_keys.md
 
   - Apache:
     - Configurer apache: apache.md
+
+  - Nagios:
+    - Serveur: nagios_server.md
+    - Client ncpa: nagios_ncpa.md
+
 
 
 
