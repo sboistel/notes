@@ -14,3 +14,6 @@
 - history + !number: rappeler une commande
 - CTRL+R: rechercher une commande
 - man -k: chercher un man par mot-clé 
+- at: planifier des taches
+- crontab: planifier des taches récurrentes
+- udevadm settle: commandes à executer apres création de stockage

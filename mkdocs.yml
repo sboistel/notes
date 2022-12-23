@@ -14,6 +14,10 @@ nav:
     - Créer et resize un LVM: create_lvm.md
     - Regex: shell-expansion.md
     - Création de clés privées: ssh_keys.md
+    - Crontab: crontab.md
+    - Container: container.md
+    - SELinux: selinux.md
+    - swap: swap.md
 
   - Apache:
     - Configurer apache: apache.md
