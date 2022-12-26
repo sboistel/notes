@@ -11,13 +11,15 @@ nav:
     - Commandes à connaitre: commandes_rhel.md
     - Firewall: firewall.md
     - Réinitialiser mot de passe root: root_password.md
+    - Emergency mode: emergency.md
     - Créer et resize un LVM: create_lvm.md
     - Regex: shell-expansion.md
     - Création de clés privées: ssh_keys.md
     - Crontab: crontab.md
     - Container: container.md
     - SELinux: selinux.md
-    - swap: swap.md
+    - Swap: swap.md
+    - NFS: nfs.md
 
   - Apache:
     - Configurer apache: apache.md
