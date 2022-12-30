@@ -9,6 +9,7 @@ nav:
 
   - RHEL:
     - Commandes à connaitre: commandes_rhel.md
+    - Repository: repo.md
     - Firewall: firewall.md
     - Réinitialiser mot de passe root: root_password.md
     - Emergency mode: emergency.md
@@ -20,6 +21,7 @@ nav:
     - SELinux: selinux.md
     - Swap: swap.md
     - NFS: nfs.md
+    - Chrony: chrony.md
 
   - Apache:
     - Configurer apache: apache.md
