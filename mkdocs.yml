@@ -22,6 +22,7 @@ nav:
     - Swap: swap.md
     - NFS: nfs.md
     - Chrony: chrony.md
+    - Log: log.md
 
   - Apache:
     - Configurer apache: apache.md
