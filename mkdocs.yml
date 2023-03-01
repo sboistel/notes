@@ -23,6 +23,9 @@ nav:
     - NFS: nfs.md
     - Chrony: chrony.md
     - Log: log.md
+  
+  - SSL/TLS:
+    - Fonctionnement: ssl.md
 
   - Apache:
     - Configurer apache: apache.md
