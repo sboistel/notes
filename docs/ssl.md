@@ -24,3 +24,16 @@ Le serveur possède une paire de clés rsa (privée et publique). Le serveur env
 4. Le serveur répond en envoyant son certificat root contenant sa clé publique.
 5. Le serveur reçoit le certificat. Il va utiliser la clé publique du CA pour déchiffrer la signature du certificat pour obtenir l'empreinte. Il va ensuite chiffrer grâce à l'algorithme communiqué l'ensemble des informations du certificat pour obtenir l'empreinte à nouveau. Il va comparer les deux empreintes. Si elles sont identiques, l'identité du serveur est validée. Si elles sont différentes, cela veut dire que des informations ont été modifées dans le certificat ou alors que ce n'est pas un certificat valide, il refuse donc la connexion.
 6. Si la connexion est validée, alors il utilise la clé publique pour envoyer sa clé symétrique chiffrée au serveur qui pourra la déchiffrer grâce à sa clé privée. Ils peuvent alors initialiser la connexion sécurisée grâce à la clé symétrique.
+
+## OpenSSL
+
+Commande qui permet de gérer les certificats et les clés de chiffrement
+
+.csr = non signé
+
+.crt = signé
+
+- `openssl genrsa -out mysite.key 4096`: création de clés RSA (les deux sont contenues dans mysite.key)
+- `openssl req -new -key mysite.key -out mysite.csr`: création d'une requête à partir d'une clé
+- `openssl req -x509 -newkey rsa:4096 -keyout mysite.key -out mysite.crt -days 365`: (x509=format certificat) créer un certificat autosigné
+- `openssl x509 -in mysite.crt -text -noout`: lire un certificat
