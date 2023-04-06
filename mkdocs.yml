@@ -9,20 +9,27 @@ nav:
 
   - RHEL:
     - Commandes à connaitre: commandes_rhel.md
+    - Gestion de packets: packet.md
     - Repository: repo.md
     - Firewall: firewall.md
     - Réinitialiser mot de passe root: root_password.md
     - Emergency mode: emergency.md
-    - Créer et resize un LVM: create_lvm.md
     - Regex: shell-expansion.md
     - Création de clés privées: ssh_keys.md
     - Crontab: crontab.md
     - Container: container.md
     - SELinux: selinux.md
-    - Swap: swap.md
-    - NFS: nfs.md
     - Chrony: chrony.md
     - Log: log.md
+    - SSH: ssh.md
+    - Hostname: hostname.md
+    - umask: umask.md
+    - Process priority: priority.md
+    - Stockage basique: basic_storage.md
+    - Swap: swap.md
+    - NFS: nfs.md
+    - Créer et resize un LVM: create_lvm.md
+    - Stratis: stratis.md
   
   - SSL/TLS:
     - Fonctionnement: ssl.md

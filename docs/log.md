@@ -40,3 +40,17 @@ Conf de logrotate dans /etc/logrotate.d/*:
 ```
 
 `logrotate -f /etc/logrotate.d/*` force le logrotate
+
+## Journalctl
+
+Voir des logs
+
+Editer le fichier /etc/systemd/journald.conf:
+
+- persistent: Stores journals in the /var/log/journal directory, which persists across reboots. If the /var/log/journal directory does not exist, then the systemd-journald service creates it.
+
+- volatile: Stores journals in the volatile /run/log/journal directory. As the /run file system is temporary and exists only in the runtime memory, the data in it, including system journals, does not persist across a reboot.
+
+- auto: If the /var/log/journal directory exists, then the systemd-journald service uses persistent storage; otherwise it uses volatile storage. This action is the default if you do not set the Storage parameter.
+
+- none: Do not use any storage. The system drops all logs, but you can still forward the logs.

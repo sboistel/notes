@@ -37,3 +37,6 @@ Commande qui permet de gérer les certificats et les clés de chiffrement
 - `openssl req -new -key mysite.key -out mysite.csr`: création d'une requête à partir d'une clé
 - `openssl req -x509 -newkey rsa:4096 -keyout mysite.key -out mysite.crt -days 365`: (x509=format certificat) créer un certificat autosigné
 - `openssl x509 -in mysite.crt -text -noout`: lire un certificat
+- `openssl x509 -req -in site.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out site.crt -extfile site.cnf -extensions req...`: signer une requete avec une CA
+
+Faire attention aux subject alternative name (obligatoire)

@@ -1,5 +1,11 @@
 # Crontab
 
+`at`: planifier des tâches dans la journée ou le lendemain
+
+`atq`: voir les taches des différents users
+
+`atrm 5`: retirer le job 5
+
 `crontab -e`
 ```
 # Example of job definition:
@@ -11,3 +17,13 @@
 # |  |  |  |  |
 # *  *  *  *  * user-name  command to be executed
 ```
+
+`/etc/crontab, /etc/cron.d`: utiliser pour éditer des jobs système
+
+# Anacron
+
+Permet de planifier des jobs qui seront exécutés même si le système a été éteint*
+
+# Systemd Timer
+
+Programmer un service
