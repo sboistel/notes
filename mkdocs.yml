@@ -9,8 +9,10 @@ nav:
 
   - RHEL:
     - Commandes à connaitre: commandes_rhel.md
+    - Kickstart: kickstart.md
     - Gestion de packets: packet.md
     - Repository: repo.md
+    - Boot process: boot.md
     - Firewall: firewall.md
     - Réinitialiser mot de passe root: root_password.md
     - Emergency mode: emergency.md

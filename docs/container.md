@@ -17,17 +17,9 @@ blocked = false
 7. `podman pull registry.access.redhat.com/ubi8/python-38`
 8. `podman images`
 
-
-
-# Créer un container
-
-1. `podman build -t python36:1.0 .`
-2. `podman create --name python36 <id>`
-3. `podman start python36`
-
 ## Commandes podman
 - `podman-build`: créer un container avec un fichier container
-- `podman-run`: lancer une commande dans un nouveau container
+- `podman-run -d --name name cmd`: lancer une commande dans un nouveau container détaché
 - `podman-images`: lister les images locales
 - `podman-ps`: afficher les infos d'un container
 - `podman-inspect`: affiche la configuration d'un container
@@ -37,3 +29,38 @@ blocked = false
 - `podman-rm`: retirer un ou plusieurs containers
 - `podman-rmi`: retirer une ou plusieurs images locales
 - `podman-search`: cherche une image
+
+`skopeo inspect image` permet de donner des informatiions sur une image, et notamment "usage" qui donne un example de commandes
+
+## Variables d'environnement
+
+On peut spécifier des variables d'environnement qui peuvent être nécessaires à l'exécution du container
+
+## Analyse de logs
+
+`podman container logs db01`
+
+## Stockage persistant
+
+Option -v 
+
+`-v /home/user/db_data:/var/lib/mysql:Z`: gérer le stockage permanent + :Z pour ajouter le contexte selinux
+
+## Port mapping
+
+Option -p
+
+`-p 13306:3306`
+`podman port -a`
+
+## Réseau
+
+`podman network create`
+
+## Systemd
+
+create /home/"user"/.config/systemd/user
+
+`podman generate systemd --name --new`
+`systemctl --user start service`
+`loginctl enable-linger`: pour démarrer le service au démarrage

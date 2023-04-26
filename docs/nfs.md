@@ -34,7 +34,7 @@ Service qui monte et remonte automatiquement les FS si besoin
 /shares /etc/auto.demo
 ```
 
-- Pour une Direct Map:
+- Pour une Direct Map (permet de monter un FS à un endroit précis et qui ne changera pas):
 ```
 /- /etc/auto.direct
 ```
