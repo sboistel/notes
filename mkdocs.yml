@@ -7,9 +7,10 @@ nav:
   - Python:
     - Créer un environnement virtuel: pip_venv.md
 
-  - RHEL:
+  - LINUX:
     - Commandes à connaitre: commandes_rhel.md
     - Kickstart: kickstart.md
+    - Preseed: preseed.md
     - Gestion de packets: packet.md
     - Repository: repo.md
     - Boot process: boot.md
@@ -46,6 +47,9 @@ nav:
   - Git:
     - Commandes git: git_commands.md
 
+  - Azure:
+    - Services: services.md
+    
 
 
 
