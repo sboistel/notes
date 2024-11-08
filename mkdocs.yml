@@ -1,4 +1,16 @@
 site_name: Notes
+site_author: hugo-mah
+site_description: >-
+  Doc strings for notes projects.
+
+copyright: Copyright &copy; 2024 hugo-mah
+
+repo_name: notes
+repo_url: https://github.com/hugo-mah/notes
+
+theme: 
+  name: readthedocs
+
 nav: 
   - Ansible: 
     - Installer: ansible.md
@@ -49,9 +61,3 @@ nav:
 
   - Azure:
     - Services: services.md
-    
-
-
-
-theme: readthedocs
-
